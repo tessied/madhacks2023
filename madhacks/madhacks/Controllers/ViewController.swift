@@ -23,7 +23,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     @IBOutlet weak var table: UITableView!
-    //@IBOutlet weak var imageView: UIImageView
     @IBOutlet weak var button: UIButton!
     
     let searchController = UISearchController()
@@ -83,7 +82,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     /* Camera Function */
     @IBAction func didTapButton() {
+        let picker = UIImagePickerController()
         
+        picker.sourceType = .camera
+        //picker.allowsEditing = true
+        picker.delegate = self
+        present(picker, animated: true)
     }
     
     
@@ -109,6 +113,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = CardSliderViewController.with(dataSource: self)
         vc.modalPresentationStyle = .fullScreen
+        vc.isModalInPresentation = false
         vc.title = "Welcome!"
         present(vc, animated: true)
         //dismiss(animated: true, completion: nil)
@@ -122,5 +127,32 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cardData.count
     }
 
+}
+
+/* Camera Stuff*/
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+        
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        picker.dismiss(animated: true, completion: nil)
+        
+        guard let image1 = info[UIImagePickerController.InfoKey.originalImage] as?
+        UIImage else{
+            return
+        }
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Camera") as? CameraView {
+            vc.img = image1
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        //CameraView.updateImg(image1)
+        //CameraView.updateImg(CameraView, image1)
+    }
 }
 

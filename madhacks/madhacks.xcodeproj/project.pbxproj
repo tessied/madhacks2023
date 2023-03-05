@@ -133,7 +133,6 @@
 				34F4469829B3D16900E1ECBE /* SceneDelegate.swift */,
 				34F4469C29B3D16900E1ECBE /* Main.storyboard */,
 				346A787329B4557B0035F367 /* SlidingCard.swift */,
-				346A787129B40B030035F367 /* CameraView.swift */,
 				346A786F29B3E62A0035F367 /* CustomTableViewCell.swift */,
 				34F4469F29B3D16A00E1ECBE /* Assets.xcassets */,
 				34F446A129B3D16A00E1ECBE /* LaunchScreen.storyboard */,
@@ -146,6 +145,7 @@
 		34F446AA29B3DAAE00E1ECBE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				346A787129B40B030035F367 /* CameraView.swift */,
 				34F4469A29B3D16900E1ECBE /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -490,7 +490,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85ZTG5C8G8;
+				DEVELOPMENT_TEAM = 3BV472A55V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = madhacks/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow to take photo";
@@ -522,7 +522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85ZTG5C8G8;
+				DEVELOPMENT_TEAM = 3BV472A55V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = madhacks/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow to take photo";
