@@ -4,7 +4,7 @@ Inspired by the app BeReal, where users send a picture of themselves daily, we w
 
 We realized that parents were not talking to their kids enough, especially when their kids went off to college and beyond. We wanted to provide a platform where families can stay in touch and keep updated with each others' lives.
 
-What it does
+What it does /n
 Every day, users receive a prompt. They post a photo related to that prompt. The photo is shared with their family groups.
 
 How we built it
