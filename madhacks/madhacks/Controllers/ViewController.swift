@@ -7,6 +7,8 @@
 
 import UIKit
 import CardSlider
+import FirebaseDatabase
+import FirebaseStorage
 
 struct Item: CardSliderItem {
     var image: UIImage
@@ -47,6 +49,36 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         /* Card Slider*/
         super.viewDidLoad()
+        let ref = Database.database().reference()
+    
+        
+        ref.child("uploads").observe(.childAdded) { snapshot, secondarg   in
+            let upload = Upload.fromDictionary(snapshot.value as! [String: Any])
+            let storageRef = Storage.storage().reference(withPath: upload?.photo ?? "")
+            
+            storageRef.getData(maxSize: 1000 * 1024 * 1024) { data, error in
+              if let error = error {
+                // Uh-oh, an error occurred!
+                print("Error downloading image: \(error)")
+              } else {
+                // Data for "path/to/image.jpg" is returned
+                let image_ = UIImage(data: data!)
+                  
+                  let rotatedImage: UIImage = UIImage(cgImage: (image_?.cgImage)!, scale: image_!.scale, orientation: .right)
+
+                // Do something with the image, such as displaying it in an UIImageView
+                // imageView.image = image
+                  self.cardData.append(Item(image: rotatedImage,
+                                   rating: nil,
+                                   title: "James",
+                                   subtitle: "Baby bobo having a good time",
+                                   description: nil))
+                  
+                  print("Done Getting Photos")
+              }
+            }
+            
+        }
         cardData.append(Item(image: UIImage(named: "bobo")!,
                          rating: nil,
                          title: "Steph",
@@ -64,9 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                          title: "Tessie",
                          subtitle: "he so handsome",
                          description: nil))
-        
-//            myButton.backgroundColor = .link
-//        myButton.setTitleColor(.white, for: .normal)
+
         
         
         // Do any additional setup after loading the view.
@@ -78,6 +108,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         table.dataSource = self
         table.delegate = self
+        
     }
     
     /* Camera Function */
