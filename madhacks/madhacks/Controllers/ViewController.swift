@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                   self.cardData.append(Item(image: rotatedImage,
                                    rating: nil,
                                    title: "James",
-                                   subtitle: "Baby bobo having a good time",
+                                   subtitle: "Default caption",
                                    description: nil))
                   
                   print("Done Getting Photos")

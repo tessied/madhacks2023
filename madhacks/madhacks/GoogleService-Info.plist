@@ -3,34 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>469239768362-oa9r4bq7itni0rlu1ts0e8e3kuvapb3r.apps.googleusercontent.com</string>
+	<string>976143478799-vcdqs0h0k1hts7vu5b9k1908n4k9l1u1.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.469239768362-oa9r4bq7itni0rlu1ts0e8e3kuvapb3r</string>
+	<string>com.googleusercontent.apps.976143478799-vcdqs0h0k1hts7vu5b9k1908n4k9l1u1</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB44qfOiSwFRqafPSQp_WI2gHnUmCWjqDM</string>
+	<string>AIzaSyBITuZ7oJVk4pLjrDbYU_ajy7NJ4IQ8g2A</string>
 	<key>GCM_SENDER_ID</key>
-	<string>469239768362</string>
+	<string>976143478799</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>mobi.steph.madhacks</string>
+	<string>TessieDong.madhacks</string>
 	<key>PROJECT_ID</key>
-	<string>unprompted-4e8b8</string>
+	<string>unprompted-cec2e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>unprompted-4e8b8.appspot.com</string>
+	<string>unprompted-cec2e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:469239768362:ios:db4cfe7fdb815e80752a53</string>
-	<key>DATABASE_URL</key>
-	<string>https://unprompted-4e8b8-default-rtdb.firebaseio.com</string>
+	<string>1:976143478799:ios:4b67ac73b68c904221f37a</string>
 </dict>
 </plist>
