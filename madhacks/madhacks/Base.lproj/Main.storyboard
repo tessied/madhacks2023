@@ -66,7 +66,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Take Picture"/>
                                 <connections>
                                     <action selector="didTapButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgH-he-dBW"/>
-                                    <segue destination="fDN-Yu-fPs" kind="show" id="jJR-UE-aRd"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-hJ-wlB">
@@ -116,19 +115,48 @@ Send a picture of your pet!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HxP-Mo-Hao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2779" y="-699"/>
+            <point key="canvasLocation" x="2777.8625954198474" y="-699.29577464788736"/>
         </scene>
         <!--Camera View-->
         <scene sceneID="H2Z-3R-os3">
             <objects>
-                <viewController id="fDN-Yu-fPs" customClass="CameraView" customModule="madhacks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Camera" id="fDN-Yu-fPs" customClass="CameraView" customModule="madhacks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oj8-rm-g9x">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mZY-CS-AAj">
+                                <rect key="frame" x="20" y="79" width="353" height="503"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="503" id="FAC-vY-BIY"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" text="Caption" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sgw-h1-UNI">
+                                <rect key="frame" x="20" y="607" width="353" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="mrJ-8Z-VHy"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zxZ-vl-QkI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sgw-h1-UNI" firstAttribute="leading" secondItem="zxZ-vl-QkI" secondAttribute="leading" constant="20" id="MwE-xc-Gc5"/>
+                            <constraint firstItem="sgw-h1-UNI" firstAttribute="top" secondItem="mZY-CS-AAj" secondAttribute="bottom" constant="25" id="P6p-RH-VhL"/>
+                            <constraint firstItem="zxZ-vl-QkI" firstAttribute="trailing" secondItem="mZY-CS-AAj" secondAttribute="trailing" constant="20" id="VwS-pj-FKa"/>
+                            <constraint firstItem="mZY-CS-AAj" firstAttribute="leading" secondItem="zxZ-vl-QkI" secondAttribute="leading" constant="20" id="dR3-KJ-yeO"/>
+                            <constraint firstItem="zxZ-vl-QkI" firstAttribute="trailing" secondItem="sgw-h1-UNI" secondAttribute="trailing" constant="20" id="gk1-6f-V74"/>
+                            <constraint firstItem="mZY-CS-AAj" firstAttribute="top" secondItem="zxZ-vl-QkI" secondAttribute="top" constant="20" id="pQD-Bk-7kh"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="usU-u6-45J"/>
+                    <connections>
+                        <outlet property="imageView" destination="mZY-CS-AAj" id="V3b-fL-7ZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkG-2r-ecd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

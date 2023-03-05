@@ -5,7 +5,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Please allow to record audio</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Please allow to take photo</string>
+	<string>Please allow access to take photo</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
