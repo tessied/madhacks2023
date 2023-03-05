@@ -134,9 +134,6 @@
 				34F4469629B3D16900E1ECBE /* AppDelegate.swift */,
 				34F4469829B3D16900E1ECBE /* SceneDelegate.swift */,
 				34F4469C29B3D16900E1ECBE /* Main.storyboard */,
-				346A787329B4557B0035F367 /* SlidingCard.swift */,
-				346A786F29B3E62A0035F367 /* CustomTableViewCell.swift */,
-				346A787529B4E85C0035F367 /* PhotoCells.swift */,
 				34F4469F29B3D16A00E1ECBE /* Assets.xcassets */,
 				34F446A129B3D16A00E1ECBE /* LaunchScreen.storyboard */,
 				34F446A429B3D16A00E1ECBE /* Info.plist */,
@@ -157,6 +154,8 @@
 		34F446AB29B3DAB700E1ECBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				346A786F29B3E62A0035F367 /* CustomTableViewCell.swift */,
+				346A787529B4E85C0035F367 /* PhotoCells.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +163,7 @@
 		34F446AC29B3DAC700E1ECBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				346A787329B4557B0035F367 /* SlidingCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

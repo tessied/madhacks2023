@@ -81,10 +81,11 @@ class Upload {
 }
 
 
-class CameraView: UIViewController {
+class CameraView: UIViewController, UITextFieldDelegate {
     
     var img: UIImage!
     var caption: String!
+    @IBOutlet weak var captionTextField: UITextField!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var button: UIButton!
     @IBOutlet var submitButton: UIButton!
@@ -93,7 +94,6 @@ class CameraView: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         imageView.image = img
         
         let storageRef = Storage.storage().reference()
@@ -131,11 +131,6 @@ class CameraView: UIViewController {
         
         print("TESSSSSIE")
     }
-    
-    func updateImg(image: UIImage) {
-        self.img = image
-    }
-    
     
 }
 

@@ -102,7 +102,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         // Do any additional setup after loading the view.
-        title = "tree."
+        title = "tree"
         self.filteredPhotos = data
         
         button.tintColor = UIColor(red: 157/255, green: 129/255, blue: 137/255, alpha: 1.0) //198, 236, 213
@@ -148,7 +148,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let vc = CardSliderViewController.with(dataSource: self)
         vc.modalPresentationStyle = .fullScreen
         vc.isModalInPresentation = false
-        vc.title = "Prompt: We love our furry friends. Send a picture of your pet!"
+        vc.title = "Today's Photos"
         present(vc, animated: true, completion: nil)
         //dismiss(animated: true, completion: nil)
     }
