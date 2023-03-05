@@ -78,7 +78,21 @@ open class CardSliderViewController: UIViewController, UIScrollViewDelegate {
 		collectionView.isPagingEnabled = true
 		collectionView.showsHorizontalScrollIndicator = false
 		collectionView.delaysContentTouches = false
+//
+//        let button = UIButton(frame: CGRect(x: 200, y: 100, width: 100, height: 50))
+//        button.backgroundColor = .green
+//        button.setTitle("Back", for: .normal)
+//        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+//
+//        self.view.addSubview(button)
 	}
+    
+//    @objc func buttonAction(sender: UIButton!) {
+//        if let vc = storyboard?.instantiateViewController(withIdentifier: "main") as? mainView {
+//            navigationController?.pushViewController(vc, animated: true)
+//        }
+//        print("Button tapped")
+//    }
 	
 	open override var title: String? {
 		didSet {

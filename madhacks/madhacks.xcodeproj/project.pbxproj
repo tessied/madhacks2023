@@ -38,6 +38,7 @@
 		346A787029B3E62A0035F367 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A786F29B3E62A0035F367 /* CustomTableViewCell.swift */; };
 		346A787229B40B030035F367 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A787129B40B030035F367 /* CameraView.swift */; };
 		346A787429B4557B0035F367 /* SlidingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A787329B4557B0035F367 /* SlidingCard.swift */; };
+		346A787629B4E85C0035F367 /* PhotoCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A787529B4E85C0035F367 /* PhotoCells.swift */; };
 		34F4469729B3D16900E1ECBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4469629B3D16900E1ECBE /* AppDelegate.swift */; };
 		34F4469929B3D16900E1ECBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4469829B3D16900E1ECBE /* SceneDelegate.swift */; };
 		34F4469B29B3D16900E1ECBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F4469A29B3D16900E1ECBE /* ViewController.swift */; };
@@ -52,6 +53,7 @@
 		346A786F29B3E62A0035F367 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		346A787129B40B030035F367 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		346A787329B4557B0035F367 /* SlidingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingCard.swift; sourceTree = "<group>"; };
+		346A787529B4E85C0035F367 /* PhotoCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCells.swift; sourceTree = "<group>"; };
 		34F4469329B3D16900E1ECBE /* madhacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = madhacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F4469629B3D16900E1ECBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34F4469829B3D16900E1ECBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				34F4469C29B3D16900E1ECBE /* Main.storyboard */,
 				346A787329B4557B0035F367 /* SlidingCard.swift */,
 				346A786F29B3E62A0035F367 /* CustomTableViewCell.swift */,
+				346A787529B4E85C0035F367 /* PhotoCells.swift */,
 				34F4469F29B3D16A00E1ECBE /* Assets.xcassets */,
 				34F446A129B3D16A00E1ECBE /* LaunchScreen.storyboard */,
 				276DAEFD29B477AA0087AC2F /* GoogleService-Info.plist */,
@@ -340,6 +343,7 @@
 				346A787429B4557B0035F367 /* SlidingCard.swift in Sources */,
 				34F4469B29B3D16900E1ECBE /* ViewController.swift in Sources */,
 				34F4469729B3D16900E1ECBE /* AppDelegate.swift in Sources */,
+				346A787629B4E85C0035F367 /* PhotoCells.swift in Sources */,
 				346A787029B3E62A0035F367 /* CustomTableViewCell.swift in Sources */,
 				346A787229B40B030035F367 /* CameraView.swift in Sources */,
 				34F4469929B3D16900E1ECBE /* SceneDelegate.swift in Sources */,

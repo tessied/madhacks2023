@@ -10,12 +10,12 @@ import CardSlider
 
 
 class SlidingCard: UIViewController {
-    var button: UIButton!
+    //var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        button = UIButton(frame: CGRect(x: 200, y: 100, width: 100, height: 50))
+        let button = UIButton(frame: CGRect(x: 200, y: 100, width: 100, height: 50))
         button.backgroundColor = .green
         button.setTitle("Test Button", for: .normal)
         button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
