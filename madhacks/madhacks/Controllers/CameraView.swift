@@ -88,7 +88,7 @@ class CameraView: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var button: UIButton!
     @IBOutlet var submitButton: UIButton!
-    
+    @IBOutlet var btn: UIButton!
     
     override func viewDidLoad() {
         
@@ -135,6 +135,8 @@ class CameraView: UIViewController {
     func updateImg(image: UIImage) {
         self.img = image
     }
+    
+    
 }
 
 

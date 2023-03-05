@@ -39,8 +39,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // array of photos
     let data: [FamPhoto] = [
-        FamPhoto(title: "fam1", imageName: "photo1"),
-        FamPhoto(title: "fam2", imageName: "photo2")
+        FamPhoto(title: "kimmys", imageName: "fam"),
+        FamPhoto(title: "Big Ran", imageName: "stephFam"),
+        FamPhoto(title: "soh soh", imageName: "jamesFam"),
+        FamPhoto(title: "KTP Fam", imageName: "ktp")
     ]
     
     var filteredData: [FamPhoto]!
@@ -100,10 +102,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         // Do any additional setup after loading the view.
-        title = "placeholder"
+        title = "tree."
         self.filteredPhotos = data
         
-        button.tintColor = UIColor(red: 157/255, green: 129/255, blue: 137/255, alpha: 1.0)
+        button.tintColor = UIColor(red: 157/255, green: 129/255, blue: 137/255, alpha: 1.0) //198, 236, 213
         
         
         table.dataSource = self
@@ -131,9 +133,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let photo = data[indexPath.row]
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         cell.label.text = photo.title
-        cell.iconImageView.layer.masksToBounds = true
-        cell.iconImageView.layer.cornerRadius = 50 // change later for circle
+        //cell.iconImageView.layer.masksToBounds = true
+        //cell.iconImageView.layer.cornerRadius = 100 // change later for circle
         cell.iconImageView.image = UIImage(named: photo.imageName)
+        cell.iconImageView.round()
         return cell
     }
     
@@ -145,8 +148,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let vc = CardSliderViewController.with(dataSource: self)
         vc.modalPresentationStyle = .fullScreen
         vc.isModalInPresentation = false
-        vc.title = "Welcome!"
-        present(vc, animated: true)
+        vc.title = "Prompt: We love our furry friends. Send a picture of your pet!"
+        present(vc, animated: true, completion: nil)
         //dismiss(animated: true, completion: nil)
     }
     
@@ -187,3 +190,11 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
     }
 }
 
+public extension UIView {
+    func round() {
+        let width = bounds.width < bounds.height ? bounds.width : bounds.height
+        let mask = CAShapeLayer()
+        mask.path = UIBezierPath(ovalIn: CGRectMake(bounds.midX - width / 2, bounds.midY - width / 2, width, width)).cgPath
+        self.layer.mask = mask
+    }
+}
