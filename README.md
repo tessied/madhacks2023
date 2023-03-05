@@ -1,4 +1,4 @@
-# madhacks2023
+# madhacks2023 by Tessie Dong, Steph Ran, James Soh, and Jack Kim
 
 Inspired by the app BeReal, where users send a picture of themselves daily, we wanted this social networking app to be a way to connect with our parents and extended families through photo responses to daily prompts.
 
