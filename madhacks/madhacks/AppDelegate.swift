@@ -2,19 +2,23 @@
 //  AppDelegate.swift
 //  madhacks
 //
-//  Created by Stephanie Ran on 3/4/23.
+//  Created by Tessie Dong on 3/4/23.
 //
 
 import UIKit
+import FirebaseCore
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
+    func application(_ application: UIApplication,
+      didFinishLaunchingWithOptions launchOptions:
+                     [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      FirebaseApp.configure()
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
+      return true
     }
 
     // MARK: UISceneSession Lifecycle
@@ -33,4 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
 
