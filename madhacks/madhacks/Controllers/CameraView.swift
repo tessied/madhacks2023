@@ -9,26 +9,19 @@ import UIKit
 import FirebaseDatabase
 import FirebaseStorage
 
-class CameraView: UIViewController {
+class CameraView: UIViewController, UITextFieldDelegate {
     
     var img: UIImage!
     var caption: String!
+    @IBOutlet weak var captionTextField: UITextField!
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var button: UIButton!
-    @IBOutlet var btn: UIButton!
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         imageView.image = img
         
     }
-    
-    func updateImg(image: UIImage) {
-        self.img = image
-    }
-    
     
 }
 
